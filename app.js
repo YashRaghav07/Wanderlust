@@ -38,10 +38,17 @@ main()
     console.log(err);
   });
 
+<<<<<<< HEAD
 //Connect to mongoDB
 async function main() {
   await mongoose.connect(db_URL);
 }
+=======
+//Root route
+app.get("/", (req, res) => {
+  res.send("Hi, I am root");
+});
+>>>>>>> e1e88cb2d3cb1fcf022045c85360e633016cbf0f
 
 const store = MongoStore.create({
   mongoUrl: process.env.ATLUSDB_URL,
