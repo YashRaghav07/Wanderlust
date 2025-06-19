@@ -1,4 +1,4 @@
-var key =mapToken; //Insert your LocationIQ access token here
+var key = mapToken; //Insert your LocationIQ access token here
 
 var styleJson =
   "https://tiles-staging.locationiq.com/v3/streets/vector.json?key=" + key;
@@ -6,13 +6,13 @@ var styleJson =
 const map = new ol.Map({
   target: "map",
   view: new ol.View({
-    center: ol.proj.fromLonLat([long,lat]),
+    center: ol.proj.fromLonLat([long, lat]),
     zoom: 12,
   }),
 });
 
 var marker = new ol.Feature({
-  geometry: new ol.geom.Point(ol.proj.fromLonLat([long,lat])),
+  geometry: new ol.geom.Point(ol.proj.fromLonLat([long, lat])),
   name: "marker",
 });
 
@@ -40,3 +40,4 @@ var vectorLayer = new ol.layer.Vector({
 map.addLayer(vectorLayer);
 
 olms.apply(map, styleJson);
+console.log(mapToken);
