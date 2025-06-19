@@ -38,11 +38,6 @@ main()
     console.log(err);
   });
 
-//Connect to mongoDB
-async function main() {
-  await mongoose.connect(db_URL);
-}
-
 //Root route
 app.get("/", (req, res) => {
   res.send("Hi, I am root");
