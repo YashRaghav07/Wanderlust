@@ -43,11 +43,6 @@ async function main() {
   await mongoose.connect(db_URL);
 }
 
-//Root route
-app.get("/", (req, res) => {
-  res.send("Hi, I am root");
-});
-
 const store = MongoStore.create({
   mongoUrl: process.env.ATLUSDB_URL,
   crypto: {
