@@ -48,11 +48,6 @@ It offers features similar to platforms like Airbnb, where users can view listin
 
 ---
 
-📷 Screenshots
-(Add screenshots or a short demo video link here)
-
----
-
 🧠 Inspiration
 >>> This project is inspired by Colt Steele's YelpCamp concept, adapted into a travel-focused app with modern integrations.
 
