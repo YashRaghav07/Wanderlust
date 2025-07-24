@@ -86,7 +86,7 @@ app.use((req,res,next)=>{
 });
 
 
-app.use("/listings",listingRoute);
+app.use("/",listingRoute);
 app.use("/listings/:id/review",reviewRoute);
 app.use("/",userRoute);
 
